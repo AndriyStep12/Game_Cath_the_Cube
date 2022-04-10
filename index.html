@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        
+    </div>
+    
+    
+    <script>
+    box.onmouseover = function(){
+            let random1 = Math.floor(Math.random() * 100);
+            let random2 = Math.floor(Math.random() * 100);
+            this.style.left = random1 + '%';
+            this.style.top = random2 + '%';
+        }
+        
+        box.onclick = function(){
+            alert('Ти мене зловив');
+        }
+        
+    </script>
+</body>
+</html>
